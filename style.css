@@ -1,0 +1,82 @@
+.main {
+    background-image: url("./Assets/Bg.png");
+}
+.pre-loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 40%;
+    top: 30%;
+}
+.pre-loader img {
+    /* height: 40%; */
+    width: 20%;
+}
+.custom-shape-divider-top-1605634992 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1605634992 svg {
+    position: relative;
+    display: block;
+    width: calc(218% + 1.3px);
+    height: 500px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1605634992 .shape-fill {
+    fill: #f69836;
+}
+.hand-img {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+.quote {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    font-weight: 800;
+    font-size: 30px;
+}
+#second-btn {
+    position: absolute;
+    top: 70% !important;
+    left: 55%;
+}
+.btn-dark {
+    position: absolute;
+    top: 60% !important;
+    left: 55%;
+}
+.waves-effect {
+    position: absolute;
+    display: block !important;
+    left: 55%;
+    width: 30% !important;
+    margin-bottom: 1%;
+    background-color: white !important;
+    color: black !important;
+}
+.btn-grp {
+    top: 100% !important;
+    margin-top: 30%;
+}
+footer {
+    text-align: center !important;
+    margin-top: 10%;
+}
+.form {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    width: 60%;
+}
+.form input {
+    width: 30%;
+}
