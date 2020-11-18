@@ -8,7 +8,7 @@
 
 ![](https://res.cloudinary.com/dcykxiua2/image/upload/v1605711799/login_ihnenb.png)
 
-### The verifivation page
+### The verification page
 
 ![](https://res.cloudinary.com/dcykxiua2/image/upload/v1605711799/verify_vhb8iu.png)
 
