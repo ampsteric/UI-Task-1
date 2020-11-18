@@ -54,6 +54,13 @@
     top: 60% !important;
     left: 55%;
 }
+.main .waves-effect {
+    position: absolute;
+    top: 80% !important;
+    left: 55%;
+    background-color: rgb(37, 35, 35) !important;
+    color: white !important;
+}
 .waves-effect {
     position: absolute;
     display: block !important;

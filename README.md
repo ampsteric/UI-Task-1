@@ -2,7 +2,7 @@
 
 ### The Home page
 
-![](https://res.cloudinary.com/dcykxiua2/image/upload/v1605711800/index_ymviyn.png)
+![](https://res.cloudinary.com/dcykxiua2/image/upload/v1605712884/home_gkzhif.png)
 
 ### The Login page
 
