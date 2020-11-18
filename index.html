@@ -1,57 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
 
-    <title>Task-1</title>
-</head>
-<body class="main"  onload="myFunction()">
-    <div class="pre-loader" id="loader">
-        <img src="./Assets/preloader.png" alt="">
-</div>  
-    <div style="display:none;" id="myDiv" class="animate-bottom">
-        <div class="custom-shape-divider-top-1605634992">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-            
+        <title>Task-1</title>
+    </head>
+    <body class="main" onload="myFunction()">
+        <div class="pre-loader" id="loader">
+            <img src="./Assets/preloader.png" alt="" />
         </div>
-    </div>
-    <div class="hand-img" id="hide" style="display:none;" >
-                <img src="./Assets/hand.png" alt="">
+        <div style="display: none" id="myDiv" class="animate-bottom">
+            <div class="custom-shape-divider-top-1605634992">
+                <svg
+                    data-name="Layer 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1200 120"
+                    preserveAspectRatio="none"
+                >
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"
+                    ></path>
+                </svg>
             </div>
+        </div>
+        <div class="hand-img" id="hide" style="display: none">
+            <img src="./Assets/hand.png" alt="" />
+        </div>
 
+        <div class="quote" id="one" style="display: none">
+            <p>
+                HURRY!! <br />
+                HUNGER DONT WAIT.
+            </p>
+        </div>
 
+        <a id="2" style="display: none" href="./login.html"
+            ><button type="button" class="btn btn-dark">
+                Continue without Login
+            </button></a
+        >
+        <a id="3" style="display: none" href="./login.html"
+            ><button type="button" id="second-btn" class="btn btn-dark">
+                Already a member? LOGIN
+            </button></a
+        >
 
-    <div class="quote" id="one" style="display:none;" >
-<p>HURRY!!  <br> HUNGER DONT WAIT.</p>
-            </div>
+        <script>
+            var myVar;
 
-            <a  id="2" style="display:none;"  href="./login.html"><button type="button" class="btn btn-dark">Continue without Login</button></a>
-                <a id="3" style="display:none;"  href="./login.html"><button type="button" id="second-btn" class="btn btn-dark">Already a member? LOGIN</button></a>
+            function myFunction() {
+                myVar = setTimeout(showPage, 5500);
+            }
 
-
-<script>
-    var myVar;
-    
-    function myFunction() {
-      myVar = setTimeout(showPage, 1500);
-    }
-    
-    function showPage() {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("myDiv").style.display = "block";
-      document.getElementById("hide").style.display = "block";
-      document.getElementById("one").style.display = "block";
-      document.getElementById("2").style.display = "block";
-      document.getElementById("3").style.display = "block";
-    }
-    </script>
-</body>
+            function showPage() {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("myDiv").style.display = "block";
+                document.getElementById("hide").style.display = "block";
+                document.getElementById("one").style.display = "block";
+                document.getElementById("2").style.display = "block";
+                document.getElementById("3").style.display = "block";
+            }
+        </script>
+    </body>
 </html>
